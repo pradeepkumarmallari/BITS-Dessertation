@@ -1,0 +1,11 @@
+Name : Mallari Pradeep Kumar
+Bits Id : 2020mt93590
+
+1. This is the Dev Ops Assignment 2 submission
+2. Find the code in the src/main/java/DevOpsAssignment/SecondAssignment/stepDefinition/Assignment2
+3. This automation code is implemented using Selenium and Cucumber frameworks
+4. run the mvn test in the project directory to run the code
+
+
+
+*********************Thank You****************************************
