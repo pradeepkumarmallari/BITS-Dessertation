@@ -11,7 +11,8 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-		plugin = "json:target/cucumber-reports/CucumberTestReport.json"
+		plugin = "json:target/cucumber-reports/CucumberTestReport.json",
+		features = {"src/main/java/DevOpsAssignment/SecondAssignment/featureFiles"}
 )
 public class App extends AbstractTestNGCucumberTests
 
