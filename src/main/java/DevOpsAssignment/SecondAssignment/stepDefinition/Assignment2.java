@@ -31,6 +31,7 @@ public class Assignment2 {
 		//Can same selenium test work in different browsers (chrome or IE)
 		if(browser.equals("Chrome")) {
 			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.setHeadless(true);
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);
 		}
