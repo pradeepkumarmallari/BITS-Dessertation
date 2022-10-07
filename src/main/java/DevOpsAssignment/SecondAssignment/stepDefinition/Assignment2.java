@@ -33,9 +33,7 @@ public class Assignment2 {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.setHeadless(true);
 			WebDriverManager.chromedriver().setup();
-			  System.setProperty(
-			            "webdriver.chrome.driver",
-			            "C:\\Users\\prdp1\\.m2\\repository\\webdriver\\chromedriver\\win32\\106.0.5249.61\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\prdp1\\.m2\\repository\\webdriver\\chromedriver\\win32\\106.0.5249.61\\chromedriver.exe");
 			driver = new ChromeDriver(chromeOptions);
 		}
 		else if(browser.equals("Edge")) {
