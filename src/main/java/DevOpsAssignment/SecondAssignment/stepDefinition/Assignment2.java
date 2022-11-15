@@ -17,7 +17,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
 import io.cucumber.java.en.Given;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Assignment2 {
 	WebDriver driver;
@@ -30,15 +29,15 @@ public class Assignment2 {
 
 		//Can same selenium test work in different browsers (chrome or IE)
 		if(browser.equals("Chrome")) {
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.setHeadless(true);
-			WebDriverManager.chromedriver().cachePath("./target").setup();
+			/*
+			 * ChromeOptions chromeOptions = new ChromeOptions();
+			 * chromeOptions.setHeadless(true);
+			 */
 			//System.setProperty("webdriver.chrome.driver", "/target/chromedriver/win32/106.0.5249.61/chromedriver.exe");
-			driver = new ChromeDriver(chromeOptions);
+			driver = new ChromeDriver();
 		}
 		else if(browser.equals("Edge")) {
 			EdgeOptions edgeOptions=new EdgeOptions();
-			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver(edgeOptions);
 		}
 		
