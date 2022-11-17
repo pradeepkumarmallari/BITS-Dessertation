@@ -1,4 +1,4 @@
-package DevOpsAssignment.SecondAssignment.utilities;
+package bits.dissertation.utilities;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -8,7 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.manager.SeleniumManager;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import io.cucumber.java.Scenario;
 
@@ -30,14 +30,13 @@ public class BaseTestClass {
 				 * EdgeOptions edgeOptions=new EdgeOptions();
 				 * WebDriverManager.edgedriver().setup(); driver = new EdgeDriver(edgeOptions);
 				 */
+				driver=new EdgeDriver();
 			}
 			//Navigate to the website
 			driver.get(url);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
-			//Need of thread.sleep() functionality, in case of loading page or waiting for search results
-			Thread.sleep(3000);
 			
 		} catch (Exception e) {
 			// TODO: handle exception

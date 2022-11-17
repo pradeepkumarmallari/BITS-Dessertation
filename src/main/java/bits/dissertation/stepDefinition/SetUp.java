@@ -1,7 +1,7 @@
-package DevOpsAssignment.SecondAssignment.stepDefinition;
+package bits.dissertation.stepDefinition;
 
-import DevOpsAssignment.SecondAssignment.pages.LoginPage;
-import DevOpsAssignment.SecondAssignment.utilities.BaseTestClass;
+import bits.dissertation.pages.LoginPage;
+import bits.dissertation.utilities.BaseTestClass;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;

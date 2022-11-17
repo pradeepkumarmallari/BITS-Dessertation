@@ -1,6 +1,6 @@
-package DevOpsAssignment.SecondAssignment.stepDefinition;
+package bits.dissertation.stepDefinition;
 
-import DevOpsAssignment.SecondAssignment.pages.LoginPage;
+import bits.dissertation.pages.LoginPage;
 import io.cucumber.java.en.*;
 
 public class SignInSD {

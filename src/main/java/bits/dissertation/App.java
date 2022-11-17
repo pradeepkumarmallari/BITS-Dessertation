@@ -1,4 +1,4 @@
-package DevOpsAssignment.SecondAssignment;
+package bits.dissertation;
 
 
 import org.testng.annotations.AfterClass;
