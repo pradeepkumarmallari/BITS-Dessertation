@@ -33,9 +33,10 @@ public class BaseTestClass {
 				driver=new EdgeDriver();
 			}
 			//Navigate to the website
-			driver.get(url);
+			
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.get(url);
 
 			
 		} catch (Exception e) {
@@ -54,13 +55,25 @@ public class BaseTestClass {
 	}
 	
 	public void enterText(String text,WebElement element) {
-		element.sendKeys(text);
+		try {
+			element.sendKeys(text);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
 		
 		
 	}
 	
 	public void clickOnElement(WebElement element) {
-		element.click();
+		try {
+			element.click();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public boolean validateElementPresent(WebElement element) {

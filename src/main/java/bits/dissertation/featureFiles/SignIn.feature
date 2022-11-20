@@ -1,5 +1,6 @@
 Feature: Sign In
-
+	
+	@Automated @Regression
 	Scenario Outline: Validate the <Status> Sign in scenario
 	 Given User navigates to the "https://www.flipkart.com" website in "Chrome" browser
 	 When User logins <User Name> as username and <Password> as password

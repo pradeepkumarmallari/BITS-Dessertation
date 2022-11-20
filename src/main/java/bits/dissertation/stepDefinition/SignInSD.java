@@ -21,5 +21,11 @@ public class SignInSD {
     public void user_logins_in_to_application_as(String status) throws Throwable {
         loginPage.validateLogin(status);
     }
+	
+	@Given("^User Login into the application$")
+    public void user_login_into_the_application() throws Throwable {
+		loginPage.fillLoginDetails("9494482457", "mpk.7099");
+		loginPage.clickLoginButton();
+    }
 
 }

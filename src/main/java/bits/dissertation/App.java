@@ -11,8 +11,8 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-		plugin = "json:target/cucumber-reports/CucumberTestReport.json",
-		features = {"src/main/java/DevOpsAssignment/SecondAssignment/featureFiles"}
+		plugin = "json:target/cucumber-reports/CucumberTestReport.json"
+		,tags= "@Regression"
 )
 public class App extends AbstractTestNGCucumberTests
 
